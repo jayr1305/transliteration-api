@@ -1,10 +1,3 @@
-# transliteration-api
-This is an end to end transliteration api service built over pypi project ai4bharat-transliteration.
-
-Here’s a `README.md` for your Dockerized transliteration API:
-
----
-
 # Transliteration API
 
 This project is a Flask-based API for transliterating text from English to Indian languages (currently supporting Hindi and Marathi) using the `ai4bharat-transliteration` library. The API allows users to input a word and get the corresponding transliteration for the requested language.
