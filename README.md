@@ -1,6 +1,6 @@
 # Transliteration API
 
-This project is a Flask-based API for transliterating text from English to Indian languages (currently supporting Hindi and Marathi) using the `ai4bharat-transliteration` library. The API allows users to input a word and get the corresponding transliteration for the requested language.
+This project is a Flask-based API for transliterating text from English to Indian languages (currently supporting Hindi and Marathi) using the [AI4Bharat's](https://ai4bharat.iitm.ac.in/areas/xlit)  `ai4bharat-transliteration` library. The API allows users to input a word and get the corresponding transliteration for the requested language.
 
 ## Features
 - **Transliteration Support**: Converts English text into Hindi (`hi`) or Marathi (`mr`).
@@ -8,7 +8,7 @@ This project is a Flask-based API for transliterating text from English to India
 - **Dockerized**: Easy to build and deploy using Docker.
 
 ## Requirements
-- Docker installed on your machine
+- [Docker](https://docs.docker.com/engine/install/) installed on your machine
 
 ## Input and Output
 
@@ -16,12 +16,14 @@ This project is a Flask-based API for transliterating text from English to India
 
 **Format:**
 ```
-GET /tl/{lang}/{word}?k={optional_topk_value}
+GET /tl/{lang}/{word}?k={topk}
 ```
 
 - `lang`: The language code for transliteration (`hi` for Hindi, `mr` for Marathi).
 - `word`: The English word you want to transliterate.
-- `k`: (Optional) The number of top-k transliterations to return (default is 5).
+- `topk`: (Optional) The number of top-k transliterations to return (default is 5).
+
+Here is the list of [Languagues supported](https://pypi.org/project/ai4bharat-transliteration/).
 
 ### Example Request
 ```

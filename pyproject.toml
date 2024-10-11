@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "transliteration-api"
+version = "0.1.0"
+description = ""
+authors = ["Jay Rawal <jay@wadhwaniai.org>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "2.3.2"
+pytz = "2023.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
