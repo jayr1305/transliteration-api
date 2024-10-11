@@ -1,0 +1,52 @@
+# Ignore Python cache and compiled files
+**/__pycache__/
+**/*.py[cod]
+**/*.pyo
+*.pyo
+*.pyc
+*.pyd
+
+# Ignore virtual environments
+venv/
+ENV/
+.venv/
+env/
+
+# Ignore build artifacts
+**/build/
+**/dist/
+**/*.egg-info/
+
+# Ignore IDE and editor settings
+.vscode/
+.idea/
+*.iml
+
+# Ignore logs and temporary files
+*.log
+*.bak
+*.swp
+*.tmp
+*.tmp.*
+
+# Ignore Docker-specific files
+Dockerfile
+.dockerignore
+
+# Ignore Git and other version control files
+.git/
+.gitignore
+
+# Ignore any sensitive or environment-specific files
+.env
+
+# Ignore the Gradio app if not used in Docker build
+gradio_app/
+
+# Ignore tests directory if not needed in the Docker build
+tests/
+
+# Ignore specific files that may not be needed in the Docker context
+**/.DS_Store
+**/Thumbs.db
+**/desktop.ini
